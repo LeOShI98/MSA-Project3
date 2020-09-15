@@ -1,19 +1,21 @@
 # web app that anglyse image content and translate into selected language
-from flask import Flask
+import base64
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 # Define a route for the app's home page
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
-    return "<h1>This the home page</h1>"
+    if request.method == "POST":
+        # Display the image that was uploaded
+        image = request.files["file"]
+        uri = "data:;base64," + base64.b64encode(image.read()).decode("utf-8")
 
-# Define a route for the app's About page
-@app.route("/about")
-def about():
-    return "<h1>This the About page</h1>"
+    else:
+        # Display a placeholder image
+        uri = "/static/placeholder.png"
 
-# Define a route for the app's Contact Us page
-@app.route("/contact")
-def contact():
-    return "<h1>This the Contact Us page</h1>"
+    return render_template("index.html", image_uri=uri)
+
+
