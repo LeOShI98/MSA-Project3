@@ -1,0 +1,1 @@
+# web app that anglyse image content and translate into selected language
