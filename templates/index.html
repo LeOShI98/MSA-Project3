@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>WHAT IS THIS?</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -18,11 +18,11 @@
   .bgimg {
     background-position: center;
     background-size: cover;
-    background-image: url("/static/1.jepg");
+    background-image: url("/static/5.jpeg");
     min-height: 75%;
   }
 
-  .menu {
+  .poem {
     display: none;
   }
 </style>
@@ -39,25 +39,23 @@
         <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
       </div>
       <div class="w3-col s3">
-        <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+        <a href="#use" class="w3-button w3-block w3-black">USE</a>
       </div>
       <div class="w3-col s3">
-        <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+        <a href="#poem" class="w3-button w3-block w3-black">POEM</a>
       </div>
     </div>
   </div>
 
   <!-- Header with image -->
   <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-      <span class="w3-tag">Open from 6am to 5pm</span>
+    <div class="w3-display-bottomright w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">“I have no special talents, I am only passionately curious.” Albert Einstein</span>
     </div>
     <div class="w3-display-middle w3-center">
-      <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+      <span class="w3-text-white" style="font-size:90px">WHAT<br>IS<br>THIS</span>
     </div>
-    <div class="w3-display-bottomright w3-center w3-padding-large">
-      <span class="w3-text-white">15 Adr street, 5015</span>
-    </div>
+
   </header>
 
   <!-- Add a background color and large text to the whole page -->
@@ -66,120 +64,60 @@
     <!-- About Container -->
     <div class="w3-container" id="about">
       <div class="w3-content" style="max-width:700px">
-        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-        <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
-          sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THIS SITE</span></h5>
+        <p>The idea of this site is to encourge curiousity to explore, just like what a curious cat would do. Users can upload a picture and generate a little poem based on
+          tags which might be assisiated with the picture.</p>
+        <p>In addition to gnerating to poem, there are also language selections so the users can have the freedom of choice and appritoate different cultures.</p>
         <div class="w3-panel w3-leftbar w3-light-grey">
-          <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new
-              sweet.</i></p>
-          <p>Chef, Coffeeist and Owner: Liam Brown</p>
+          <p><i>“The important thing is not to stop questioning. Curiosity has its own reason for existing.” </i></p>
+          <p>Albert Einstein</p>
         </div>
-        <img src="/static/1.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
-        <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-        <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+        <img src="/static/3.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
       </div>
     </div>
 
-    <!-- Menu Container -->
-    <div class="w3-container" id="menu">
+    <!-- Application Container -->
+    <div class="w3-container" id="use" style="padding-bottom:32px;">
       <div class="w3-content" style="max-width:700px">
-
-        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
-
-        <div class="w3-row w3-center w3-card w3-padding">
-          <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-            <div class="w3-col s6 tablink">Eat</div>
-          </a>
-          <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-            <div class="w3-col s6 tablink">Drink</div>
-          </a>
-        </div>
-
-        <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-          <h5>Bread Basket</h5>
-          <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-
-          <h5>Honey Almond Granola with Fruits</h5>
-          <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-
-          <h5>Belgian Waffle</h5>
-          <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-          <h5>Scrambled eggs</h5>
-          <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-
-          <h5>Blueberry Pancakes</h5>
-          <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-        </div>
-
-        <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-          <h5>Coffee</h5>
-          <p class="w3-text-grey">Regular coffee 2.50</p><br>
-
-          <h5>Chocolato</h5>
-          <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-
-          <h5>Corretto</h5>
-          <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-
-          <h5>Iced tea</h5>
-          <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-
-          <h5>Soda</h5>
-          <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-        </div>
-        <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-      </div>
-    </div>
-
-    <!-- Contact/Area Container -->
-    <div class="w3-container" id="where" style="padding-bottom:32px;">
-      <div class="w3-content" style="max-width:700px">
-        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-        <p>Find us at some address at some place.</p>
-        <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-        <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand
-          your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-        <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required
-              name="People"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required
-              name="date" value="2017-11-16T20:00"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements"
-              required name="Message"></p>
-          <p><button class="w3-button w3-black" type="submit">SEND MASSAGE</button></p>
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHAT IS THIS</span></h5>
+        <p><span class="w3-tag">FYI!</span>Generate a "What is this ?" poem with a picture that you upload. A simple "What is this" can be the start of endless possibility.</p>
+        
+        <p>Don't just stop at making this poem, use the poem as your fuel of imagination and creativity! </p>
+        
+        <form method="POST" enctype="multipart/form-data">
+          <div style="display: none">
+            <input type="file" id="upload-file" name="file" accept=".jpg,.jpeg,.png,.gif">
+            <input type="submit" id="submit-button" value="Upload">
+          </div>
+          <select id="language" class="form-control" name="language">
+            <option value="en">English</option>
+            <option value="zh-Hant">Chinese (simplified)</option>
+            <option value="zh-Hans">Chinese (traditional)</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="pt">Portugese</option>
+            <option value="es">Spanish</option>
+          </select>
+          <img id="uploaded-image" src="{{ image_uri }}">
+          <input type="button" id="upload-button" class="btn" value="Upload Photo">
         </form>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <form method="POST" enctype="multipart/form-data">
-            <div style="display: none">
-              <input type="file" id="upload-file" name="file" accept=".jpg,.jpeg,.png,.gif">
-              <input type="submit" id="submit-button" value="Upload">
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h1 class="modal-title">"What is this?"</h1>
+              </div>
+              <div class="modal-body"></div>
             </div>
-            <select id="language" class="form-control" name="language">
-              <option value="en">English</option>
-              <option value="zh-Hant">Chinese (simplified)</option>
-              <option value="zh-Hans">Chinese (traditional)</option>
-              <option value="fr">French</option>
-              <option value="de">German</option>
-              <option value="it">Italian</option>
-              <option value="ja">Japanese</option>
-              <option value="ko">Korean</option>
-              <option value="pt">Portugese</option>
-              <option value="es">Spanish</option>
-            </select>
-            <img id="uploaded-image" src="{{ image_uri }}">
-            <input type="button" id="upload-button" class="btn" value="Upload Photo">
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -187,6 +125,60 @@
 
 
 
+
+
+
+    <!-- Poem Container -->
+    <div class="w3-container" id="poem">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CURIOCITY</span></h5>
+
+        <div class="w3-row w3-center w3-card w3-padding">
+          <a href="javascript:void(0)" onclick="openPoem(event, 'English');" id="myLink">
+            <div class="w3-col s6 tablink">English</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openPoem(event, 'Chinese');">
+            <div class="w3-col s6 tablink">中文</div>
+          </a>
+        </div>
+
+        <div id="English" class="w3-container poem w3-padding-48 w3-card">
+          <h5>Are You Curious?</h5>
+          <p class="w3-text-grey">Are you curiou?</p>
+          <p class="w3-text-grey">Would you like to know?</p>
+          <p class="w3-text-grey">Do you ever wonder,</p>
+          <p class="w3-text-grey">why cat eyes glow</p>
+          <p class="w3-text-grey">Are you curiou?</p>
+          <p class="w3-text-grey">why a cheetah has spots</p>
+          <p class="w3-text-grey">or how a sailor ties hish knots.</p>
+          <p class="w3-text-grey">It is fantastic you use your brain,</p>
+          <p class="w3-text-grey">To think or ponder about the rain.</p>
+          <p class="w3-text-grey">So please be curious and ask why.</p>
+          <p class="w3-text-grey">It can make you smarter if you try.</p>
+          <p class="w3-text-black">————Gwen Jones</p><br>
+
+        </div>
+
+        <div id="Chinese" class="w3-container poem w3-padding-48 w3-card">
+          <h5>杜敬叔寓僧舍开轩松下以虚濑名之来求诗</h5>
+          <p class="w3-text-grey">君不见洛阳八节滩，未至一舍闻惊湍，生绡六幅谁所画？入眼能令三伏寒。</p>
+
+         
+          <p class="w3-text-grey">又不见桐庐七里濑，溅雪跳珠舞澎湃，羊裘老子去千年，绝世孤风凛如在。</p>
+
+    
+          <p class="w3-text-grey">杜陵之孙今胜流，飘然不必事远游，结茆古寺听松吹，坐擅洛水桐江秋。</p>
+
+        
+          <p class="w3-text-grey">放翁百念俱已矣，独有好奇心未死。约君少待秋月明，抱琴来宿写滩声。</p>
+
+         
+          <p class="w3-text-black">————陆游（宋）</p>
+        </div>
+        <img src="/static/2.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+      </div>
+    </div>
 
 
 
@@ -206,10 +198,10 @@
   </footer>
 
   <script>
-    // Tabbed Menu
-    function openMenu(evt, menuName) {
+    // Tabbed Poem
+    function openPoem(evt, poemName) {
       var i, x, tablinks;
-      x = document.getElementsByClassName("menu");
+      x = document.getElementsByClassName("poem");
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
@@ -217,7 +209,7 @@
       for (i = 0; i < x.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
       }
-      document.getElementById(menuName).style.display = "block";
+      document.getElementById(poemName).style.display = "block";
       evt.currentTarget.firstElementChild.className += " w3-dark-grey";
     }
     document.getElementById("myLink").click();
@@ -236,10 +228,29 @@
       $("#upload-file").change(function () {
         $("#submit-button").click();
       });
+      $("#language").val("{{ language }}");
     });
   </script>
 
 
+
+
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <script type="text/javascript">
+    // If flash messages are queued up, show them in a modal dialog box
+    var messages = {{ messages | safe }};
+    body = $(".modal-body");
+    body.empty();
+
+    for (i = 0; i < messages.length; i++) {
+      body.append("<h2>" + messages[i] + "</h2>");
+    }
+
+    $("#myModal").modal("show");
+  </script>
+  {% endif %}
+  {% endwith %}
 
 
 
